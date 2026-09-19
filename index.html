@@ -1,64 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ty Dawkins</title>
-    </head>
-    <body>
-        <header>
-            <h1>Ty Dawkins</h1>
-            <p class="tagline">Backend developer in training</p>
-            <nav>
-                <a href="#about">About</a> &nbsp;
-                <a href="#projects">Projects</a>
-            </nav>
-        </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ty Dawkins | Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <!-- Bio -->
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                I come from a computer and video game background, but a few years ago
-                friends introduced me to programming, and I traded one hobby for another.
-                I've been learning through Boot.dev ever since, working toward a
-                backend development career while I finish an AA degree in CS.
-            </p>
-            <p>
-                Outside of code, I'm usually at the local card game store, at a concert, or on a
-                snowboard. I also help my mom run her small
-                <a href="https://www.socaldoubledfarm.com/" target="_blank" title="Family farm" rel="noopener noreferrer">farm</a>,
-                which is more of a rescue operation these days, home to alpacas, ducks, turkeys, chickens,
-                and a few other unexpected residents.
-            </p>
-        </section>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-mark">ty<span>.</span>dev</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
 
-        <!-- Projects -->
-        <section id="projects">
-            <h2>Projects</h2>
+<section class="hero">
+  <div>
+    <div class="hero-eyebrow">Backend developer in training</div>
+    <h1>Ty Dawkins</h1>
+    <p class="lede">Backend developer in training, currently studying at Crafton Hills College and leveling up daily through Boot.dev. I like understanding how systems store, move, and serve data.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">See my work</a>
+      <a class="btn btn-secondary" href="#" download>Download résumé</a>
+    </div>
+  </div>
 
-            <div class="project">
-                <h3><a href="https://github.com/ty-dawkins/rupert-ai" target="_blank" rel="noopener noreferrer">rupert-ai</a></h3>
-                <p>
-                    A Python-based AI coding agent, built up over several months from a
-                    basic CLI tool into a full FastAPI HTTP service. Includes API key
-                    authentication, request logging, and SQLite-backed conversation
-                    history so context survives server restarts. Uses an agent loop
-                    pattern with function calling to read files, write files, run
-                    Python, and search the web with a DuckDuckGo search library.
-                </p>
-            </div>
+  <div class="terminal">
+    <div class="terminal-bar">
+      <div class="dot dot-r"></div>
+      <div class="dot dot-y"></div>
+      <div class="dot dot-g"></div>
+      <div class="terminal-title">ty@portfolio: zsh</div>
+    </div>
+    <div class="terminal-body" id="terminal-log">
+      <div><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+      <div><span class="out-val">Ty Dawkins</span></div>
+      <div>&nbsp;</div>
+      <div><span class="prompt">$</span> <span class="cmd">cat stack.txt</span></div>
+      <div><span class="out-key">languages:</span> <span class="out-accent">Python, C++, JavaScript, SQL</span></div>
+      <div><span class="out-key">focus:</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="out-accent">backend development</span></div>
+      <div>&nbsp;</div>
+      <div><span class="prompt">$</span> <span class="cursor"></span></div>
+    </div>
+  </div>
+</section>
 
-            <div class="project">
-                <h3><a href="https://github.com/ty-dawkins/pygame-asteroids" target="_blank" rel="noopener noreferrer">pygame-asteroids</a></h3>
-                <p>
-                    A classic Asteroids clone built with Python and pygame. Features a
-                    full state machine (start/playing/game-over), a lives system with
-                    respawn and invulnerability, asteroid splitting, polygon rendering,
-                    sound effects, and a size-based scoring system where smaller
-                    asteroids are worth more points.
-                </p>
-            </div>
-        </section>
-    </body>
+<section id="about">
+  <div class="section-head">
+    <h2>About</h2>
+  </div>
+  <div class="about-grid">
+    <div>
+      <p>I'm a computer science student at Crafton Hills College, focused on backend development through Boot.dev's project-based curriculum. I like understanding the whole path a piece of data takes: how it's stored, processed, and served.</p>
+      <p>Right now I'm juggling a few projects at once: an AI agent built from scratch, a static site generator, and a playable Asteroids clone in pygame. I also drive for Uber to support myself while I study. Between rides and coursework, most of my free time goes into shipping something.</p>
+    </div>
+    <dl class="facts">
+      <dt>Based in</dt>
+      <dd>Redlands, CA</dd>
+      <dt>Currently</dt>
+      <dd>Student at Crafton Hills College</dd>
+      <dt>Interested in</dt>
+      <dd>Backend development</dd>
+      <dt>Open to</dt>
+      <dd>Internships, entry-level roles</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head">
+    <h2>Skills</h2>
+  </div>
+  <div class="skill-groups">
+    <div class="skill-group">
+      <div class="skill-group-label">Languages</div>
+      <div class="skill-chips">
+        <span class="chip">Python</span>
+        <span class="chip">C++</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">SQL</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-label">Databases</div>
+      <div class="skill-chips">
+        <span class="chip">SQLite</span>
+        <span class="chip">MySQL</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-label">Tools</div>
+      <div class="skill-chips">
+        <span class="chip">Git</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">pygame</span>
+        <span class="chip">uv</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-label">Currently learning</div>
+      <div class="skill-chips">
+        <span class="chip">Data structures &amp; algorithms</span>
+        <span class="chip">Go</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-head">
+    <h2>Projects</h2>
+    <span class="count">03</span>
+  </div>
+
+  <div class="project">
+    <div class="project-top">
+      <h3>Rupert</h3>
+      <div class="project-links">
+        <a href="https://github.com/ty-dawkins/rupert-ai">Code</a>
+      </div>
+    </div>
+    <p>An AI agent built from scratch to learn how autonomous agents actually work. It runs an agent loop that iterates on a problem up to 20 times to find an answer, with conversation history persisted to SQLite so context survives a restart. In progress: currently wiring up the API layer.</p>
+    <div class="project-tags">
+      <span class="tag">Python</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">SQLite</span>
+      <span class="tag status">in progress</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-top">
+      <h3>Static Site Generator</h3>
+      <div class="project-links">
+        <a href="https://github.com/ty-dawkins/static-site-generator">Code</a>
+      </div>
+    </div>
+    <p>A Jekyll/Hugo-style tool that converts markdown files into static HTML pages. Building the kind of tool that could generate a site like this one. In progress.</p>
+    <div class="project-tags">
+      <span class="tag">Python</span>
+      <span class="tag status">in progress</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-top">
+      <h3>Asteroids</h3>
+      <div class="project-links">
+        <a href="https://github.com/ty-dawkins/pygame-asteroids">Code</a>
+      </div>
+    </div>
+    <p>A complete, playable Asteroids clone built with pygame, with the game logic cleanly split across dedicated classes for the player, asteroids, projectiles, and lives rather than one monolithic script. Still getting occasional polish.</p>
+    <div class="project-tags">
+      <span class="tag">Python</span>
+      <span class="tag">pygame</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-head">
+    <h2>Experience</h2>
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-meta">[year] to Present</div>
+      <h3><span class="role">Computer Science Student</span> · Crafton Hills College</h3>
+      <p>Coursework in programming fundamentals and computer science, building toward a backend development career.</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-meta">[year] to Present</div>
+      <h3><span class="role">Self-Directed Study</span> · Boot.dev</h3>
+      <p>Working through Boot.dev's project-based curriculum: the source of most of the projects on this page, including Rupert and the static site generator.</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-meta">[year] to Present</div>
+      <h3><span class="role">Driver</span> · Uber</h3>
+      <p>Supporting myself while studying, balancing shifts with coursework and side projects.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <h2>Get in touch</h2>
+    <p>Open to internships and new-grad roles. The fastest way to reach me is email.</p>
+    <div class="contact-row">
+      <a href="mailto:tywilsondawkins@gmail.com">tywilsondawkins@gmail.com</a>
+      <a href="https://github.com/ty-dawkins">github.com/ty-dawkins</a>
+      <a href="#">[your LinkedIn]</a>
+    </div>
+    <p class="fine-print">A few fields (email, LinkedIn, exact dates) still need to be filled in.</p>
+  </div>
+</footer>
+
+</body>
 </html>
